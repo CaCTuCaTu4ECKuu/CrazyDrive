@@ -13,7 +13,6 @@ public class Main extends ApplicationAdapter {
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
-		img = new Texture("core/res/badlogic.jpg");
 	}
 
 	@Override

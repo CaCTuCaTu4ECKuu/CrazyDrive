@@ -1,4 +1,6 @@
-package game;
+package game.controller;
+
+import game.model.Unit;
 
 import java.awt.*;
 import java.util.List;
@@ -6,7 +8,7 @@ import java.util.List;
 /**
  * Created by Влад on 06.12.14.
  */
-public class Controller {
+public class Calculating {
 
     public boolean isCrossing(Rectangle obj1, int angle1, Rectangle obj2, int angle2) {
         return false;

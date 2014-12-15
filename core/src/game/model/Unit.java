@@ -1,11 +1,13 @@
-package game;
+package game.model;
+
+import game.model.ArmorType;
 
 import java.awt.*;
 
 /**
  * Created by Влад on 07.12.14.
  */
-
+enum ArmorType {None, Light, Middle, Heavy, Unbreakable};
 public class Unit {
     int _health;
     Point _position;
