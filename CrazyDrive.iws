@@ -84,8 +84,19 @@
       <file leaf-file-name="StartScreen.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/game/view/menu/StartScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="18" selection-start="497" selection-end="497" vertical-scroll-proportion="0.41717792" vertical-offset="51" max-vertical-offset="595">
+            <state line="36" column="88" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.44376278" vertical-offset="259" max-vertical-offset="1003">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Calculating.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/game/controller/Calculating.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="5" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+              <folding>
+                <element signature="e#885#891#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,7 +142,7 @@
       <file leaf-file-name="MenuScreen.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/game/view/MenuScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="13" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="748">
+            <state line="23" column="16" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="174" max-vertical-offset="833">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,7 +172,6 @@
         <option value="$PROJECT_DIR$/core/src/model/GameModel.java" />
         <option value="$PROJECT_DIR$/core/src/controller/Controller.java" />
         <option value="$PROJECT_DIR$/core/src/game/model/GameModel.java" />
-        <option value="$PROJECT_DIR$/core/src/game/controller/Calculating.java" />
         <option value="$PROJECT_DIR$/core/src/game/model/Unit.java" />
         <option value="$PROJECT_DIR$/core/src/CrazyDrive.java" />
         <option value="$PROJECT_DIR$/core/src/game/CrazyDrive.java" />
@@ -176,8 +186,9 @@
         <option value="$PROJECT_DIR$/core/src/game/view/menu/PauseScreen.java" />
         <option value="$PROJECT_DIR$/core/src/game/view/PauseScreen.java" />
         <option value="$PROJECT_DIR$/core/src/game/view/AbstractScreen.java" />
-        <option value="$PROJECT_DIR$/core/src/game/view/MenuScreen.java" />
         <option value="$PROJECT_DIR$/desktop/src/game/desktop/DesktopLauncher.java" />
+        <option value="$PROJECT_DIR$/core/src/game/view/MenuScreen.java" />
+        <option value="$PROJECT_DIR$/core/src/game/controller/Calculating.java" />
         <option value="$PROJECT_DIR$/core/src/game/view/menu/StartScreen.java" />
       </list>
     </option>
@@ -255,29 +266,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="desktop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CrazyDrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CrazyDrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desktop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desktop" />
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -292,6 +281,114 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CrazyDrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CrazyDrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CrazyDrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CrazyDrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CrazyDrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CrazyDrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CrazyDrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CrazyDrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -627,12 +724,12 @@
       <workItem from="1418658437811" duration="6703000" />
       <workItem from="1418707241064" duration="2287000" />
       <workItem from="1418710551968" duration="2303000" />
-      <workItem from="1418728897907" duration="11045000" />
+      <workItem from="1418728897907" duration="14230000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41540000" />
+    <option name="totallyTimeSpent" value="44725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -706,7 +803,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/game/controller/Calculating.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="20" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="425" />
+        <state line="16" column="20" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="425">
+          <folding>
+            <element signature="e#885#891#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/game/model/Unit.java">
@@ -758,7 +859,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/game/controller/Calculating.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="391" />
+        <state line="11" column="21" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="391">
+          <folding>
+            <element signature="e#885#891#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/game/model/Unit.java">
@@ -784,7 +889,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/game/controller/Calculating.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="391" />
+        <state line="11" column="21" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="391">
+          <folding>
+            <element signature="e#885#891#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/game/model/Unit.java">
@@ -810,7 +919,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/game/controller/Calculating.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="391" />
+        <state line="11" column="21" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="391">
+          <folding>
+            <element signature="e#885#891#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/game/model/Unit.java">
@@ -836,7 +949,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/game/controller/Calculating.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="25" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221" />
+        <state line="5" column="25" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221">
+          <folding>
+            <element signature="e#885#891#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/desktop/src/game/desktop/DesktopLauncher.java">
@@ -895,11 +1012,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/game/controller/Calculating.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="48" selection-start="710" selection-end="710" vertical-scroll-proportion="0.44663382" vertical-offset="0" max-vertical-offset="609" />
-      </provider>
-    </entry>
     <entry file="file://D:/Mines-master/core/src/ru/vsu/csf/minesweeper/MineSweeper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="302" selection-end="302" vertical-scroll-proportion="0.20647773" vertical-offset="0" max-vertical-offset="741">
@@ -951,24 +1063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/game/view/MenuScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="748">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/game/view/menu/MultiplayerScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="20" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/desktop/desktop.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3077">
@@ -999,6 +1093,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/game/view/MenuScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="16" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="174" max-vertical-offset="833">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/game/view/menu/MultiplayerScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="20" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/game/view/GameScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="28" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
@@ -1006,9 +1118,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/game/controller/Calculating.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="5" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <folding>
+            <element signature="e#885#891#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/game/view/menu/StartScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="18" selection-start="497" selection-end="497" vertical-scroll-proportion="0.41717792" vertical-offset="51" max-vertical-offset="595">
+        <state line="36" column="88" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.44376278" vertical-offset="259" max-vertical-offset="1003">
           <folding />
         </state>
       </provider>
