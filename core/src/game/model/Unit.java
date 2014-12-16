@@ -9,17 +9,24 @@ import java.awt.*;
  */
 enum ArmorType {None, Light, Middle, Heavy, Unbreakable};
 public class Unit {
-    int _health;
-    Point _position;
+    private int _health;
+    private Rectangle _object;
+    private int Angle;
 
-    int Angle;
-    int Acceleration;
-    Dimension Size;
-    ArmorType Armor;
-    boolean Destructable;
-    boolean Passthrought;
+    public int Acceleration;
+    public ArmorType Armor;
+    public boolean Destructable;
+    public boolean Passthrought;
 
-    public Point getPosition() {return _position;}
+    public Point getPosition() {
+        return _object.getLocation();
+    }
+    public Rectangle getObject() {
+        return _object;
+    }
+    public Dimension getSize() {
+        return _object.getSize();
+    }
     public int getHealth() {return _health;}
     public void Damage(int damage) {
         switch (Armor) {
@@ -38,8 +45,8 @@ public class Unit {
         _health -= damage;
     }
     public void Move(int x, int y, int a) {
-        _position.x += x;
-        _position.y += y;
+        _object.x += x;
+        _object.y += y;
         Angle += a;
         while (Angle >= 360)
             Angle -= 360;
@@ -47,7 +54,7 @@ public class Unit {
             Angle += 360;
     }
     public void MoveAt(int x, int y, int a) {
-        _position = new Point(x,y);
+        _object.setLocation(x, y);
         Angle = a;
     }
 }
