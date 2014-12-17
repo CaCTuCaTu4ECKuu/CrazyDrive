@@ -13,7 +13,7 @@ import java.util.List;
 public class Calculating {
 
     public static boolean isInside(Rectangle zone, Point p) {
-        return !((p.x > zone.x && p.x < zone.x + zone.width) && (p.y > zone.y && p.y < zone.y + zone.height));
+        return ((p.x > zone.x && p.x < zone.x + zone.width) && (p.y > zone.y && p.y < zone.y + zone.height));
     }
     public static boolean isCrossing(Rectangle a, int angleA, Rectangle b, int angleB) {
         Point a1 = new Point((int)(a.x + a.getWidth()), (int)(a.y - a.getHeight()));

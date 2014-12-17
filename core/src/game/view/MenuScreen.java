@@ -7,6 +7,8 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
+import java.awt.*;
+
 /**
  * Created by Влад on 16.12.14.
  */
@@ -17,6 +19,8 @@ public class MenuScreen extends AbstractScreen {
     protected BitmapFont _font;
     protected BitmapFont _fontActive;
 
+    protected Dimension _btnDimension;
+
     public MenuScreen(Game game) {
         super(game);
         _menuBg = new Texture(Gdx.files.internal("core/res/mainMenuBg.png"));
@@ -25,6 +29,7 @@ public class MenuScreen extends AbstractScreen {
         _font = new BitmapFont();
         _font.setColor(Color.BLUE);
         _fontActive = _font;
+        _btnDimension = new Dimension(_button.getWidth(), _button.getHeight());
     }
 
     @Override

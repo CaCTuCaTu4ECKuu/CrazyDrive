@@ -1,12 +1,14 @@
 package game.view;
 
 import com.badlogic.gdx.Game;
+import com.badlogic.gdx.graphics.Texture;
 
 /**
  * Created by Влад on 16.12.14.
  */
 // Непосредственно сама игра
 public class GameScreen extends AbstractScreen {
+
     @Override
     public void render(float delta) {
         super.render(delta);
