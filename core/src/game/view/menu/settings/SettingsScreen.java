@@ -1,9 +1,7 @@
 package game.view.menu.settings;
 
-import com.badlogic.gdx.Game;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input;
-import com.badlogic.gdx.InputAdapter;
+import com.badlogic.gdx.*;
+import game.controller.AbstractInputAdapter;
 import game.controller.Calculating;
 import game.view.GameScreen;
 import game.view.MenuScreen;
@@ -23,6 +21,7 @@ public class SettingsScreen extends MenuScreen {
     @Override
     public void show() {
         super.show();
+        Gdx.input.setInputProcessor(_navigation);
     }
 
     @Override
@@ -44,14 +43,24 @@ public class SettingsScreen extends MenuScreen {
     public SettingsScreen(Game game) {
         super(game);
         _back = new Point((Gdx.graphics.getWidth() / 2) - (_button.getWidth() / 2), 250 - _button.getHeight());
-        _navigation = new navigation();
+        _navigation = new navigation(this);
     }
-    private class navigation extends InputAdapter {
+    private class navigation extends AbstractInputAdapter {
+        public navigation(Screen parentScreen) {
+            super(parentScreen);
+        }
+
         @Override
         public boolean touchDown(int screenX, int screenY, int pointer, int button) {
             if (button == Input.Buttons.LEFT) {
-                if (Calculating.isInside(new Rectangle(_back, _btnDimension), _location))
-                    _game.setScreen(new StartScreen(_game));
+                Screen newScreen = null;
+
+                if (Calculating.isInside(new Rectangle(_back, _btnDimension), _location)) {
+                    newScreen = new StartScreen(_game);
+                }
+
+                if (newScreen != null)
+                        _game.setScreen(newScreen);
             }
             return super.touchDown(screenX, screenY, pointer, button);
         }

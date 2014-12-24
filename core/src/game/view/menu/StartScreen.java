@@ -3,7 +3,9 @@ package game.view.menu;
 import com.badlogic.gdx.*;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import game.controller.AbstractInputAdapter;
 import game.controller.Calculating;
+import game.model.Map;
 import game.view.GameScreen;
 import game.view.MenuScreen;
 import game.view.menu.settings.SettingsScreen;
@@ -23,6 +25,12 @@ public class StartScreen extends MenuScreen {
 
     public StartScreen(Game game) {
         super(game);
+
+        _startSingle = new Point((Gdx.graphics.getWidth() / 2) - (_button.getWidth() / 2), 100 - _button.getHeight());
+        _multiplayer = new Point((Gdx.graphics.getWidth() / 2) - (_button.getWidth() / 2), 150 - _button.getHeight());
+        _settings = new Point((Gdx.graphics.getWidth() / 2) - (_button.getWidth() / 2), 200 - _button.getHeight());
+        _exit = new Point((Gdx.graphics.getWidth() / 2) - (_button.getWidth() / 2), 250 - _button.getHeight());
+        _navigation = new navigation(this);
     }
 
     @Override
@@ -57,36 +65,39 @@ public class StartScreen extends MenuScreen {
     }
 
     @Override
+    public void hide() {
+        super.hide();
+    }
+
+    @Override
     public void show() {
         super.show();
-        _startSingle = new Point((Gdx.graphics.getWidth() / 2) - (_button.getWidth() / 2), 100 - _button.getHeight());
-        _multiplayer = new Point((Gdx.graphics.getWidth() / 2) - (_button.getWidth() / 2), 150 - _button.getHeight());
-        _settings = new Point((Gdx.graphics.getWidth() / 2) - (_button.getWidth() / 2), 200 - _button.getHeight());
-        _exit = new Point((Gdx.graphics.getWidth() / 2) - (_button.getWidth() / 2), 250 - _button.getHeight());
-        _navigation = new navigation(this);
         Gdx.input.setInputProcessor(_navigation);
     }
 
-    private class navigation extends InputAdapter {
-        Screen _thisScreen;
-        public navigation(Screen thisScreen) {
-            super();
-            _thisScreen = thisScreen;
+    private class navigation extends AbstractInputAdapter {
+        public navigation(Screen parentScreen) {
+            super(parentScreen);
         }
 
         @Override
         public boolean touchDown(int screenX, int screenY, int pointer, int button) {
             if (button == Input.Buttons.LEFT) {
+                Screen newScreen = null;
+
+                // Добавить еще меню в одиночную игру чтобы тоже можно было выбирать карту
                 if (Calculating.isInside(new Rectangle(_startSingle, _btnDimension), _location))
-                    _game.setScreen(new GameScreen(_game));
-                if (Calculating.isInside(new Rectangle(_multiplayer, _btnDimension), _location))
-                    _game.setScreen(new MultiplayerScreen(_game));
-                if (Calculating.isInside(new Rectangle(_settings, _btnDimension), _location)) {
-                    _game.setScreen(new SettingsScreen(_game));
-                    _thisScreen.dispose();
+                    newScreen = new GameScreen(_game, "singleplayer.cdm");
+                else if (Calculating.isInside(new Rectangle(_multiplayer, _btnDimension), _location))
+                    newScreen = new MultiplayerScreen(_game);
+                else if (Calculating.isInside(new Rectangle(_settings, _btnDimension), _location)) {
+                    newScreen = new SettingsScreen(_game);
                 }
-                if (Calculating.isInside(new Rectangle(_exit, _btnDimension), _location))
+                else if (Calculating.isInside(new Rectangle(_exit, _btnDimension), _location))
                     System.exit(0);
+
+                if (newScreen != null)
+                    _game.setScreen(newScreen);
             }
             return super.touchDown(screenX, screenY, pointer, button);
         }

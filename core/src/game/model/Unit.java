@@ -1,5 +1,7 @@
 package game.model;
 
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Texture;
 import game.model.ArmorType;
 
 import java.awt.*;
@@ -9,20 +11,41 @@ import java.awt.*;
  */
 enum ArmorType {None, Light, Middle, Heavy, Unbreakable};
 public class Unit {
+    public int MaxHealth;
     private int _health;
     private Rectangle _object;
-    private int Angle;
 
+    public int Angle;
+    public int Speed;
     public int Acceleration;
+    public int Weight;
     public ArmorType Armor;
     public boolean Destructable;
     public boolean Passthrought;
+    public String _texture;
+
+    public Unit(int maxHealth, Rectangle object, int angle, int speed, ArmorType armor, boolean destructable, boolean passthrought, String texture) {
+        MaxHealth = maxHealth;
+        _health = MaxHealth;
+        _object = object;
+        Angle = angle;
+        Speed = speed;
+        Armor = armor;
+        Destructable = destructable;
+        Passthrought = passthrought;
+        _texture = texture;
+    }
 
     public Point getPosition() {
         return _object.getLocation();
     }
     public Rectangle getObject() {
         return _object;
+    }
+    /// Вершины с учетом угла, на который повернут объект
+    public float[] getVertices() {
+        float[] res = new float[4];
+        return res;
     }
     public Dimension getSize() {
         return _object.getSize();
@@ -57,4 +80,9 @@ public class Unit {
         _object.setLocation(x, y);
         Angle = a;
     }
+    public void setTexture(String texture) {
+        _texture = texture;
+    }
+    public Texture getTexture() {
+        return new Texture(Gdx.files.internal(_texture)); }
 }

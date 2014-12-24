@@ -8,15 +8,19 @@ import java.util.List;
  * Created by Влад on 15.12.14.
  */
 public class Road {
-    private List<RoadSector> _road;
+    public List<RoadSector> _road;
 
-    public Hashtable getResources() {
-        // Переделать
-        // Сообщить список всех ресурсов которые нужны для этой карты
-        // Карты должны быть встроены и должна быть возможность подгружать отдельно
-        // При этом ресурсы можно использовать уже имеющиеся и запаковывать в файл карты отдельно чтобы можно было
-        // добавлять даже свои объекты в игру которых там раньше небыло
-        return new Hashtable();
+    public List<String> getResources() {
+        List<String> res = new ArrayList<String>();
+        List<String> t;
+        for (int i = 0; i < _road.size(); i++) {
+            t = _road.get(i).getResourcesList();
+            for (String s : t) {
+                if (!res.contains(s))
+                    res.add(s);
+            }
+        }
+        return res;
     }
     public RoadSector getSector(int sector) {
         if (sector > _road.size()) {

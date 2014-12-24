@@ -1,6 +1,7 @@
 package game;
 
 import com.badlogic.gdx.Game;
+import com.badlogic.gdx.Screen;
 import game.view.menu.StartScreen;
 
 /**
