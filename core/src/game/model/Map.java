@@ -14,8 +14,16 @@ public class Map {
     public Texture _bg;
     public Texture _car;
 
+    public int leftSide(int position) {
+        return 140;
+    }
+    public int rightSide(int position) {
+        return 590;
+    }
+
     public Map() {
         _bg = new Texture(Gdx.files.internal("core/res/road.png"));
+
         _car = new Texture(Gdx.files.internal("core/res/car.png"));
     }
 }

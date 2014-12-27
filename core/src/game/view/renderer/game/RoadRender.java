@@ -22,7 +22,6 @@ public class RoadRender {
 
     public void render(SpriteBatch batch, Map map, int position) {
         _screenPosition = position % Gdx.graphics.getHeight();
-        Gdx.app.log("position:", Integer.toString(_screenPosition));
 
         batch.draw(map._bg, 0, _halfScreen - _screenPosition, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         if (_screenPosition <= _halfScreen)
